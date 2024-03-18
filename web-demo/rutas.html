@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- 
+Tienen el atributo obligatorio href, donde le especificamos la ruta del recurso o sitio que queremos obtener.
+
+También tiene el atributo target, que configura cómo quieres visualizar el recurso o sitio que solicitamos.
+
+Rutas absolutas:
+    Tienen un protocolo, http o https y son únicas en la red. Se suelen utilizar para rutas externas.
+
+Rutas relativas:
+    Pueden ser relativas al punto donde nos encontramos o relativas a la raiz del proyecto
+
+    No usan protocolo
+    
+    si el recurso se encuentra en el mismo nivel (en la misma carpeta) pondremos unicamente el nombre del archivo.
+
+    Si necesitamos salir de la carpeta usaremos ../ y se pone uno por cada nivel (carpeta) de la que queremos salir.
+
+    Atributos en los enlaces:
+        target: define donde se abrirá el recurso solicitado. Por norma general siempre que usemos rutas absolutas pondremos como valor "_blank" (habre el recurso en una pestaña nueva). El valor por defecto es "_self" (es como no poner nada).
+
+        download: Atributo booleano, sirve para descargar el recurso solicitado.
+        IMPORTANTE, el recurso debe estar en tu mismo servidor
+ -->
+
+<body>
+    <h1>Home</h1>
+    <a href="contacto.html">Ir a Contacto</a>
+    <a href="https://google.com" target="_blank">Ir a Google</a>
+    <a href="../index.html">Ir al index</a>
+    <a href="/index.html">Otra forma del ir al Index</a>
+    <a href="/assets/images/XQTQ ENE2024 - Mochila 01.jpg" download>Descargar</a>
+    <a href="/listas.html">Volver a Listas</a>
+
+   
+    <h1>Blog</h1>
+    <nav>
+        <p><a href="#post-1">Post 1</a></p>
+        <p><a href="#post-2">Post 2</a></p>
+        <p><a href="#post-3">Post 3</a></p>
+        <p><a href="#post-4">Post 4</a></p>
+        <p><a href="#post-5">Post 5</a></p>
+    </nav>
+    <article id="post-1">
+        <h2>Post 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nobis aliquid commodi corrupti, doloribus obcaecati libero illo quos perferendis quod laboriosam error maiores exercitationem tenetur eaque veniam sunt temporibus magni.</p>
+
+    </article>
+    <article id="post-2">
+        <h2>Post 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi, praesentium quo aliquam incidunt tempora quam, nihil temporibus adipisci repudiandae asperiores ducimus quis quos assumenda laudantium corporis ab aliquid nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, enim ipsam? Vero a officia fugit repudiandae tenetur animi distinctio nulla quod ipsa reprehenderit! Doloremque repudiandae illo, dicta hic beatae nobis!</p>
+    </article>
+    <article id="post-3">
+        <h2>Post 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci rem earum voluptatum ratione fugiat perspiciatis? Maiores harum totam doloremque excepturi dolores vel, accusamus, odit inventore incidunt nam optio magni! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quidem excepturi, culpa ex minus, voluptas sed expedita quis voluptate provident distinctio placeat velit commodi vel laudantium labore odit rem accusamus?</p>
+    </article>
+    <article id="post-4">
+        <h2>Post 4</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet possimus sed inventore nostrum dolor omnis quam quod repudiandae quae perferendis officia facere impedit libero, doloremque quidem qui repellendus aliquam assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quo aliquam fugit perspiciatis libero! Quas optio delectus tenetur reiciendis eos quos ad, dolore inventore amet dolorum libero in ab? Aut?</p>
+    </article>
+    <article id="post-5">
+        <h2>Post 5</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quasi ad vero reprehenderit, itaque quae illum amet perferendis ipsa nesciunt reiciendis hic quos magnam repudiandae debitis? Ea quisquam quae non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eius at laborum, vero maxime libero voluptatum error hic ea tempora perspiciatis. Suscipit assumenda, ipsam asperiores odio sit perferendis temporibus illo.</p>
+    </article>
+    
+
+</body>
+</html>

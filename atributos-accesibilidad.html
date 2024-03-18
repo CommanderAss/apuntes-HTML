@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos de Accesibilidad</title>
+</head>
+<body>
+    <nav>
+        <p><a href="index.html">Volver al Index</a></p>
+    </nav>
+<!-- 
+    tabindex -> para saltar en distintas partes de la web dando un orden a donde saltar
+ -->
+
+    <p tabindex="1">Párrafo 1</p>
+    <p tabindex="2">Párrafo 2</p>
+    <p tabindex="3">Párrafo 3</p>
+
+    <p tabindex="4">El siguiente link contiene el atributo <i>aria-label</i> utilizado para dar más información a los navegadores por voz que utilizan las personas invidentes</p>
+    <a tabindex="5" href="#" aria-label="leer más sobre viajes y turismo">Leer más</a>
+
+    <p tabindex="6">El siguiente link contiene el atributo <i>role</i> utilizado para dar más información a los navegadores por voz que utilizan las personas invidentes</p>
+    <a href="#" role="article" aria-label="leer más sobre viajes y turismo">Leer más</a>
+</body>
+</html>

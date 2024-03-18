@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Vs Post</title>
+</head>
+
+<!-- 
+    GET método por defecto que tienen todas las webs por URL
+
+    POST es enviar el formulario por "la parte de atrás de la web"
+ -->
+
+<body>
+    <nav>
+        <p><a href="index.html">Volver al Index</a></p>
+        <p><a href="atributos-formularios.html">Volver a Atributos Formularios</a></p>
+    </nav>
+
+    <form action="enviar.html" method="get">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name">
+        <label for="surname">Apellido</label>
+        <input type="text" id="surname" surname="surname">
+        <input type="submit">
+    </form>
+
+    <form action="enviar.html" method="post">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name">
+        <label for="surname">Apellido</label>
+        <input type="text" id="surname" surname="surname">
+        <input type="submit">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <!-- Las listas en HTML sirven para listar contenido. En función del tipo de contenido de nuestra lista tenemos tres tipos de listas:
+
+        ul -> unordered list: Se utilizan cuando el orden de los elementos no influye (lista de compra)
+
+        ol -> ordered list: Se utilizan cuando el orden de los elementos es importante (top 10)
+
+        Se pueden construir listas aninadas teniendo en uno de los li otro ul/ol según sea necesario
+
+        <ol>
+            <li>
+                HTML
+                <ol>
+                    <li>Estructura</li>
+                    <li>Sintaxis</li>
+                    <li>Etiquetas</li>
+                </ol>
+            </li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        dl -> definition list: se utilizan para hacer una lista de definiciones (diccionario) 
+
+        Cada elemento de una lista de definición lleva 2 etiquetas:
+            dt -> Definition term: El término que vamos a definir
+
+            dd -> Definition description: La descripción del término
+
+        Atributos de las listas
+
+        ol ->
+            type: Estilo de numeración (1,A, a, I, i)
+
+            start: Inicio de la secuencia (un número)
+        
+        ul ->
+            type: Estilo de los items (disc, square, circle)
+    -->
+
+    <h1>Listas</h1>
+
+    
+
+    <nav>
+        <ul type="square">
+            <li><a href="web-demo/rutas.html#post-1">Post 1</a></li>
+            <li><a href="web-demo/rutas.html#post-2">Post 3</a></li>
+            <li><a href="web-demo/rutas.html#post-3">Post 4</a></li>
+            <li><a href="web-demo/rutas.html#post-4">Post 5</a></li>
+            <li><a href="web-demo/rutas.html#post-5">Post 2</a></li>
+        </ul>
+        <p><a href="index.html">Volver al Index</a></p>
+    </nav>
+    <h2>Lista de las compras</h2>
+    <ul>
+        <li>Pan</li>
+        <li>Huevos</li>
+        <li>Leche</li>
+
+    </ul>
+
+    <h2>Orden de aprendizaje en el desarrollo web</h2>
+    <ol type="3" start="3">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    
+    </ol>
+
+    <h2>Lenguajes para el desarrollo web</h2>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language: Es un lenguaje de marcado que se usa para estructurar datos en una página web.</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascade Style Sheets: Es un lenguaje de diseño que se utiliza para dar estilos al HTML</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Es un lenguaje de programación para dar interactividad a un sitio web.</dd>
+    </dl>
+</body>
+</html>

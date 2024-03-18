@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta Picture</title>
+</head>
+<body>
+
+    <nav>
+        <p><a href="../index.html">Volver al Index</a></p>
+        <p><a href="atributo-srcset.html">Volver al tema anterior</a></p>
+        <p><a href="etiqueta-de-audio.html">Ir a Etiqueta de Audio</a></p>
+    </nav>
+    <h1>Contenido Embebido</h1>
+    <h2>Etiqueta Picture</h2>
+
+    <p>Esta función con srcset siguen sin funcionar. Revisar! Y tira error en el W3C. Usando la etiqueta picture no funciona como el atributo SRCset. Al menos con el anterior se carga bien pero la etiqueta picture hace que desborde la imagen.</p>
+    
+    <picture>
+        <!-- <source srcset="/Contenido Embebido/assets/images/XQTQ ENE2024 - Mochila 03.jpg, /Contenido Embebido/assets/images/XQTQ ENE2024 - Mochila 04.webp"> -->
+        <source srcset="Contenido Embebido/assets/images/XQTQ ENE2024 - Mochila 04.webp" media="(max-width:1200px)">
+        <img src="/Contenido Embebido/assets/images/XQTQ ENE2024 - Mochila 03.jpg" alt="mochila 04">
+    </picture>
+</body>
+</html>

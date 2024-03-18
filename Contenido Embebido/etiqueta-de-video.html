@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta de Video</title>
+
+    <style>
+        video{
+            max-width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="../index.html">Volver al Index</a></p>
+    <p><a href="contenido-embebido.html">Volver a Contenido Embebido</a></p>
+
+    <h1>Etiqueta de Video</h1>
+
+    <div>
+        <p>Además de incluir el video, usamos la etiqueta <i>controls</i> para añadir un pequeño reproductor</p>
+        <video src="assets/video/044234036-tropical-island-travel-destina.mp4" controls></video>
+    </div>
+
+    <div>
+        <p>Además de incluir el reproductor con el atributo <i>controls</i>, añadimos el atributo <i>autoplay</i> para que comience la reproducción en forma automática</p>
+        <video src="assets/video/044234036-tropical-island-travel-destina.mp4" controls autoplay></video>
+    </div>
+
+    <div>
+        <p>Además de los atributos anteriores, también podemos incluir el atributo <i>muted</i> para que el video se reproduzca sin audio. El video de este ejemplo no tiene audio pero si vemos el reproductor, el audio está silenciado</p>
+        <video src="assets/video/044234036-tropical-island-travel-destina.mp4" controls autoplay muted></video>
+    </div>
+    <div>
+        <p>Otro atributo que podemos incluir es <i>loop</i> que hace que el video se reproduzca nuevamente una vez finalizado</p>
+        <video src="assets/video/044234036-tropical-island-travel-destina.mp4" controls autoplay muted loop></video>
+    </div>
+
+    <div>
+        <p>Un atributo que solo tiene la etiqueta de video es <b><i>poster</i></b> que nos permite fijar una portada al inicio del video</p>
+        <video src="assets/video/044234036-tropical-island-travel-destina.mp4" controls muted poster="assets/images/XQTQ ENE2024 - Mochila 05.jpg"></video>
+    </div>
+</body>
+</html>

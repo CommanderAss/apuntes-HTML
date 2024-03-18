@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs de Selección</title>
+</head>
+<!-- 
+    radio -> permite seleccionar una única opción de una lista de opciones relacionadas.
+
+    checkbox -> permite seleccionar varias opciones de una lista de opciones relacionadas
+
+    select -> crea una lista de opciones donde podemos seleccionar una o varias opciones
+
+    Cada opción irá dentro de una etiqueta <option></option>
+
+    Si tenemos muchas optiones podemos ordenarlas por categorías a través de la etiqueta <optgroup></optgroup> con el atributo <label></label> para nombrar la categoría
+ -->
+
+
+<body>
+    <nav>
+        <p><a href="index.html">Volver al Index</a></p>
+        <p><a href="formularios-mas-elementos.html">Ir a Más Elementos para Formularios</a></p>
+    </nav>
+    <h1>Elementos Seleccionables</h1>
+    <form>
+        <h2>Género</h2>
+        <label>Masculino
+            <input type="radio" name="gender" value="masculino"checked>
+        </label>
+        <label>Femenino
+            <input type="radio" name="gender" value="femenino">
+        </label>
+        <label>Desconocido
+            <input type="radio" name="gender" value="desconocido">
+        </label>
+        
+    </form>
+
+    <form>
+        <h2>Lenguajes que conoces</h2>
+        <label>HTML
+            <input type="checkbox" name="languages" value="html" checked>
+        </label>
+        <label>CSS
+            <input type="checkbox" name="languages" value="css">
+        </label>
+        <label>JavaScript
+            <input type="checkbox" name="languages" value="javascript">
+        </label>
+    </form>
+
+    <form>
+        <h2>Elementos Selccionables Simple</h2>
+        <select name="languages">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+    </form>
+
+    <form>
+        <h2>Elementos Selccionables Multiple (más de 1)</h2>
+        <select name="languages" multiple>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+    </form>
+
+    <form>
+        <h2>Elementos Seleccionables</h2>
+        <select name="mascotas">
+            <optgroup label="4 patas">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="hamster">Hamster</option>
+                <option value="conejo">Conejo</option>
+            </optgroup>
+            <optgroup label="aves">
+                <option value="loro">Loro</option>
+                <option value="canario">Canario</option>
+            </optgroup>
+            <optgroup label="otros">
+                <option value="serpiente">Serpiente</option>
+                <option value="tarantula">Tarántula</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <form>
+        <h2>Elementos Selccionables (DATALIST) contiene un filtro</h2>
+        <input type="list" list="mascotas">
+        <datalist id="mascotas">
+            <option value="perro">Aquí puede ir una descripción del valor en la lista</option>
+            <option value="gato"></option>
+            <option value="hamster"></option>
+            <option value="conejo"></option>
+            <option value="loro"></option>
+            <option value="canario"></option>
+            <option value="serpiente"></option>
+            <option value="tarantula"></option>
+        </datalist>
+    </form>
+
+
+
+
+</body>
+</html>
